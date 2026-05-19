@@ -19,6 +19,24 @@
                 max-width:200px;
                 float:right;
             }
+
+            .code-explanation{
+                margin-top:30px;
+                padding:20px;
+                border:2px solid black;
+                border-radius:10px;
+                max-width:900px;
+                background:#f8f8f8;
+            }
+
+            .code-explanation h2{
+                margin-bottom:10px;
+            }
+
+            .code-explanation p{
+                line-height:1.6;
+                margin-bottom:12px;
+            }
 		</style>
 	</head>
 	<body>
@@ -90,10 +108,36 @@
             <button onclick="showType()">Show Creature Type</button> 
             <button onclick="clearAll()">Clear All</button>
         </p>
+
+
+        <section class="code-explanation">
+    <h2>How This Page Works</h2>
+    <p>
+        This page displays a group of creatures and lets the user click the buttons
+        to learn more about them through visual changes. When the user clicks
+        <b>Show Creature Home</b>, JavaScript changes the background color of each
+        creature based on its habitat, such as land, water, or air. When the user
+        clicks <b>Show Creature Type</b>, JavaScript changes the border style and
+        color based on whether the creature is an animal or an insect. The
+        <b>Clear All</b> button resets the styles back to normal.
+    </p>
+    <p>
+        The page does this by using <code>document.querySelectorAll()</code> to
+        select all elements with the class <code>creature</code>. Each creature
+        contains custom HTML data attributes, including <code>data-home</code> and
+        <code>data-creature-type</code>. JavaScript reads those values and applies
+        different CSS styles depending on the information stored in each element.
+        This shows how data attributes can be used to organize content and control
+        page behavior dynamically.
+    </p>
+</section>
+
+
+
     </main>
 	<footer>
 	<p><small>&copy; 2026 by 
-		NAME HERE, All Rights Reserved ~ 
+		Temuujin Enkhbayar, All Rights Reserved ~ 
 		<a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
 		<a id="css-checker" href="#" target="_blank">Check CSS</a> ~ 
         Font: <a href="https://www.fontspace.com/faltura-animals-font-f11239" target="_blank">Faltura Animals</a>
